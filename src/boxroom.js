@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from './box';
 import {data} from './database';
+import Newbox from './newbox';
 
 
 const Boxroom = () => {
@@ -10,6 +11,7 @@ const Boxroom = () => {
     return (
         <div>
             {dataArray}
+            <Newbox />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 export const data=[
-    {
+    /*{
         id:1,
         item: 'item1',
         description: 'description1',
@@ -28,5 +28,5 @@ export const data=[
         id:6,
         item: 'item6',
         description: 'description6',
-    },
+    },*/
 ]
