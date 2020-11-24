@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Boxroom from './boxroom ';
+import Boxroom from './boxroom';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
