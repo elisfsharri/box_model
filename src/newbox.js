@@ -7,19 +7,19 @@ export default class Newbox extends Component {
     seen: false
   };
 
-  togglePop = () => {
+  toggleOn = () => {
     this.setState({
-      seen: !this.state.seen
+      seen: true
     });
   };
 
   render() {
     return (
-      <div onClick={this.togglePop}>
+      <div onClick={this.toggleOn}>
           <div className='bg-lightest-blue dim dib pa5 ma5 grow bw2 shadow-5 tc w-20 min-h-100l'>
               <h1 className='f-headline lh-solid yellow'>+</h1>
           </div>
-          {this.state.seen ? <PopUp toggle={this.togglePop} /> : null}
+          {this.state.seen ? <PopUp toggle={this.toggleOn} /> : null}
       </div>
     );
   }
