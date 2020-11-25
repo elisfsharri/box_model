@@ -6,7 +6,7 @@ import NewBox from './NewBox';
 
 const BoxRoom = () => {
     const DataArray = Data.map((item,i)=>{
-        return <Box item={Data[i].item} description={Data[i].description}/>
+        return <Box key={i} item={Data[i].item} description={Data[i].description}/>
     })
     return (
         <div>

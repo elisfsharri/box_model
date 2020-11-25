@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InputForm from './InputForm';
 
-export default class PopUp extends Component {
+ class PopUp extends Component {
   handleClick = () => {
     this.props.toggle();
   };
@@ -9,11 +9,13 @@ export default class PopUp extends Component {
   render() {
     return (
       <div className="modal">
-          <span onClick={this.handleClick}>
-            <br/>
-            <InputForm/>
-          </span>
+        <span onClick={this.handleClick}>
+          <br/>
+          <InputForm/>
+        </span>
       </div>
     );
   }
 }
+
+export default PopUp;
