@@ -9,8 +9,8 @@ export default class PopUp extends Component {
   render() {
     return (
       <div className="modal">
-          <span className="close" onClick={this.handleClick}>
-            &times;
+          <span onClick={this.handleClick}>
+            <br/>
             <InputForm/>
           </span>
       </div>

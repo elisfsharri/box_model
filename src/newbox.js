@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import PopUp from "./PopUp";
-import "tachyons";
 
-export default class Newbox extends Component {
+class NewBox extends Component {
   state = {
     seen: false
   };
@@ -26,3 +25,4 @@ export default class Newbox extends Component {
 }
 
 
+export default NewBox;
