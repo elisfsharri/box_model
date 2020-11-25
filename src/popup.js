@@ -1,21 +1,19 @@
-import React from'react';
+import React, { Component } from "react";
+import InputForm from './InputForm';
 
-const Popup = () => {
+export default class PopUp extends Component {
+  handleClick = () => {
+    this.props.toggle();
+  };
+
+  render() {
     return (
-        <div className='tc bg-lightest-blue w-60 center pa2 ma5 pv5'>
-            <form>
-                <label>
-                    <input type="text" value='item' className='w-50 pa2 ma2'/>
-                </label>
-                <br/>
-                <label>
-                    <input type="text" value='description' className='w-50 h4 pa2 ma2' />
-                </label>
-                <br/>
-                <input type="submit" value="Submit" className='w-50 pa2 ma3'/>
-            </form>
-        </div>
-    )
+      <div className="modal">
+          <span className="close" onClick={this.handleClick}>
+            &times;
+            <InputForm/>
+          </span>
+      </div>
+    );
+  }
 }
-
-export default Popup;

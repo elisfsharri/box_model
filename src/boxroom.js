@@ -1,19 +1,19 @@
 import React from 'react';
-import Box from './box';
-import {data} from './database';
-import Newbox from './newbox';
+import Box from './Box';
+import {Data} from './DataBase';
+import NewBox from './NewBox';
 
 
-const Boxroom = () => {
-    const dataArray = data.map((item,i)=>{
-        return <Box item={data[i].item} description={data[i].description}/>
+const BoxRoom = () => {
+    const DataArray = Data.map((item,i)=>{
+        return <Box item={Data[i].item} description={Data[i].description}/>
     })
     return (
         <div>
-            {dataArray}
-            <Newbox />
+            {DataArray}
+            <NewBox />
         </div>
     )
 }
 
-export default Boxroom;
+export default BoxRoom;
