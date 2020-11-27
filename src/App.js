@@ -13,12 +13,10 @@ const App = () => {
 
     const onItemChange = (event) => {
       setItem(event.target.value);
-      console.log(event.target.value);
     }
 
     const onDescriptionChange = (event) => {
       setDescription(event.target.value);
-      console.log(event.target.value);
     }
 
     const onInputSubmit = () => {
