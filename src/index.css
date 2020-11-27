@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: antiquewhite;
+  background-color: rgb(89, 167, 167,0.4);;
 }
 
 code {
@@ -14,10 +14,11 @@ code {
 }
 .modal {
   position: fixed;
-  left: 10px;
-  top: 10px;
+  left: 0;
+  right: 90%;
+  top: 10%;
+  bottom: 0;
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(60, 226, 212, 0.15);
 }
