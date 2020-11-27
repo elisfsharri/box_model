@@ -23,6 +23,7 @@ const App = () => {
 
     const onInputSubmit = () => {
       setData(data.concat({item,description}));
+      togglePop();
     }
 
     const togglePop = () => {
