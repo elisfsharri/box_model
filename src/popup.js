@@ -3,16 +3,18 @@ import InputForm from './InputForm';
 
 
 
-const PopUp = ({toggle}) => {
-  const handleClick = () => {
-    toggle();
-  };
+const PopUp = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit}) => {
 
   return (
     <div className="modal">
-      <span onClick={handleClick}>
+      <span>
         <br/>
-        <InputForm/>
+        <InputForm 
+          togglePop={togglePop}
+          onItemChange={onItemChange}
+          onDescriptionChange={onDescriptionChange}
+          onInputSubmit={onInputSubmit}
+        />
       </span>
     </div>
   );
