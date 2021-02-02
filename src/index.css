@@ -12,6 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.box {
+  background-color: rgba(120, 218, 231, 0.288);
+  padding: 50px;
+  margin: 20px;
+  border-width: 20px;
+  text-align: center;
+  width: 370px;
+  height: 370px;
+}
+
 .modal {
   position: fixed;
   left: 0;

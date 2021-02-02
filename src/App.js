@@ -1,31 +1,46 @@
-import React, { useState } from 'react';
-import Box from './Box';
-import NewBox from './NewBox';
-import PopUp from './PopUp';
+import React, {useState} from 'react'
+import Box from './Box'
+import NewBox from './NewBox'
+import PopUp from './PopUp'
 
 
 const App = () => {
 
   const [seen,setSeen] = useState(false)   
-  const [data,setData]=useState([]);
-  const [item,setItem]=useState('');
-  const [description,setDescription]=useState('');
+  const [data,setData]=useState([])
+  const [item,setItem]=useState('')
+  const [description,setDescription]=useState('')
+  const [formRequest,setFormRequest] = useState('')
+
 
   const onItemChange = (event) => {
-    setItem(event.target.value);
+    setItem(event.target.value)
   }
 
   const onDescriptionChange = (event) => {
-    setDescription(event.target.value);
+    setDescription(event.target.value)
   }
 
+  var isValid = true
+
   const onInputSubmit = () => {
-    setData(data.concat({item,description}));
-    togglePop();
+    if (item === '') {
+      isValid = false
+    }
+    if (isValid) {
+      setData(data.concat({item,description}))
+      togglePop()
+      setFormRequest('')
+    }
+    else {
+      setFormRequest('Item must not be empty')
+    }
   }
 
   const togglePop = () => {
-    setSeen(!seen);
+    setSeen(!seen)
+    setItem('')
+    setDescription('')
   }
 
   const dataArray = data.map((entry,i)=>{
@@ -33,7 +48,7 @@ const App = () => {
   })
 
   return (
-    <div>
+    <div className='flex flex-wrap justify-center'>
       {dataArray}
       <NewBox 
         togglePop={togglePop}
@@ -47,7 +62,8 @@ const App = () => {
           onItemChange={onItemChange}
           onDescriptionChange={onDescriptionChange}
           onInputSubmit={onInputSubmit}
-        /> 
+          formRequest={formRequest}
+        />
         :
         null
       }
@@ -55,4 +71,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App

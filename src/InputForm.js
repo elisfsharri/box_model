@@ -1,6 +1,4 @@
-import React from 'react';
-
-const InputForm = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit}) => {
+const InputForm = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit, formRequest}) => {
 
   return (
     <div className="tc bg-lightest-blue-70 w-60 center pa2 ma5 pv5 br4 shadow-1">
@@ -41,8 +39,9 @@ const InputForm = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit}
           onClick={togglePop} 
         />
         </form>
+        <div>{formRequest}</div>
     </div>
-  );
+  )
 }
 
-export default InputForm;
+export default InputForm

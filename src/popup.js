@@ -3,7 +3,7 @@ import InputForm from './InputForm';
 
 
 
-const PopUp = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit}) => {
+const PopUp = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit, formRequest}) => {
 
   return (
     <div className="modal">
@@ -14,6 +14,7 @@ const PopUp = ({togglePop, onItemChange, onDescriptionChange, onInputSubmit}) =>
           onItemChange={onItemChange}
           onDescriptionChange={onDescriptionChange}
           onInputSubmit={onInputSubmit}
+          formRequest={formRequest}
         />
       </span>
     </div>
