@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/box_model/static/css/main.f75902c4.chunk.css",
-    "main.js": "/box_model/static/js/main.2c45b3d4.chunk.js",
-    "main.js.map": "/box_model/static/js/main.2c45b3d4.chunk.js.map",
+    "main.css": "/box_model/static/css/main.a8333d1d.chunk.css",
+    "main.js": "/box_model/static/js/main.ae42ef53.chunk.js",
+    "main.js.map": "/box_model/static/js/main.ae42ef53.chunk.js.map",
     "runtime-main.js": "/box_model/static/js/runtime-main.8845e733.js",
     "runtime-main.js.map": "/box_model/static/js/runtime-main.8845e733.js.map",
     "static/css/2.31461e4f.chunk.css": "/box_model/static/css/2.31461e4f.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.0c7132a6.chunk.js.map": "/box_model/static/js/2.0c7132a6.chunk.js.map",
     "index.html": "/box_model/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/box_model/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.f75902c4.chunk.css.map": "/box_model/static/css/main.f75902c4.chunk.css.map",
+    "static/css/main.a8333d1d.chunk.css.map": "/box_model/static/css/main.a8333d1d.chunk.css.map",
     "static/js/2.0c7132a6.chunk.js.LICENSE.txt": "/box_model/static/js/2.0c7132a6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8845e733.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.0c7132a6.chunk.js",
-    "static/css/main.f75902c4.chunk.css",
-    "static/js/main.2c45b3d4.chunk.js"
+    "static/css/main.a8333d1d.chunk.css",
+    "static/js/main.ae42ef53.chunk.js"
   ]
 }
