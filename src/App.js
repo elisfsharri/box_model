@@ -6,12 +6,11 @@ import PopUp from './PopUp'
 
 const App = () => {
 
-  const [seen,setSeen] = useState(false)   
+  const [seen,setSeen]=useState(false)   
   const [data,setData]=useState([])
   const [item,setItem]=useState('')
   const [description,setDescription]=useState('')
   const [formRequest,setFormRequest] = useState('')
-
 
   const onItemChange = (event) => {
     setItem(event.target.value)
@@ -41,10 +40,11 @@ const App = () => {
     setSeen(!seen)
     setItem('')
     setDescription('')
+    setFormRequest('')
   }
 
   const dataArray = data.map((entry,i)=>{
-    return <Box key={i} item={data[i].item} description={data[i].description}/>
+    return <Box key={i} item={entry.item} description={entry.description}/>
   })
 
   return (
